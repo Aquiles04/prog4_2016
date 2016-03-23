@@ -17,5 +17,10 @@ public class ProdutoManagerImpl implements ProdutoManager {
 		return produtoRepository.obterTodos();
 		
 	}
-
+	
+	@Override
+	public Produto obterPorId(long id){
+		return produtoRepository.obterPorId(id);
+		
+	}
 }

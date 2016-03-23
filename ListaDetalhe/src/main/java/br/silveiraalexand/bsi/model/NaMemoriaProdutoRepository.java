@@ -32,5 +32,24 @@ public class NaMemoriaProdutoRepository implements ProdutoRepository {
 	public List<Produto> obterTodos (){
 		return produtos;
 	}
+	
+	public Produto obterPorId(long id){
+
+// Maneira Bizarra Usando LAMBDA
+//		return produtos.stream()
+//				.filter(p -> p.getId() == id)
+//				.findFirst()
+//				.get();
+		
+		for(Produto produto : produtos){
+			
+			if (produto.getId() == id){
+				return produto;
+			}
+			
+		}
+		
+		return null;
+	}
 
 }
