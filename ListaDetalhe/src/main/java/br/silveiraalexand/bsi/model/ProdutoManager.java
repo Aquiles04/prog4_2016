@@ -6,5 +6,5 @@ public interface ProdutoManager {
 
 	List<Produto> obterTodos();
 	Produto obterPorId(long id);
-
+	List<Produto> obterPorCategoria(long id);
 }
