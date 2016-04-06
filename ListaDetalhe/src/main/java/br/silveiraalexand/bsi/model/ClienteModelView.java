@@ -12,4 +12,15 @@ public class ClienteModelView {
 	public void setConfirmacaoSenha(String confirmacaoSenha){
 		this.confirmacaoSenha = confirmacaoSenha;
 	}
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+	
+	
+	
 }

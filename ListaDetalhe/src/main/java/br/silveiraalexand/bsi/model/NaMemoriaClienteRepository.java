@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
+@Repository
 public class NaMemoriaClienteRepository implements ClienteRepository{
 	
 	private static List<Cliente> clientes = new ArrayList<>();
