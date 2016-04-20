@@ -6,6 +6,7 @@ import br.silveiraalexand.bsi.model.Cliente;
 
 public class ClienteModelView {
 
+	//teste
 	@Valid
 	private Cliente cliente;
 	private String confirmacaoSenha;
