@@ -17,12 +17,17 @@ label, input [type=submit]{
 	<form:form modelAttribute="clientemv">
 		<form:label path="cliente.nome">Nome:</form:label>
 		<form:input path="cliente.nome"/>
+		<form:errors path="cliente.nome"/>
 		
-		<form:label path="cliente.nome">Cpf:</form:label>
+		<form:label path="cliente.cpf">Cpf:</form:label>
 		<form:input path="cliente.cpf"/>
+		<form:errors path="cliente.cpf"/>
+		
 		
 		<form:label path="cliente.dataNascimento">Data de Nasc.:</form:label>
 		<form:input path="cliente.dataNascimento" type="date"/>
+		<form:errors path="cliente.dataNascimento"/>
+		
 		
 		<form:label path="cliente.sexo">Sexo:</form:label>
 		<form:select path="cliente.sexo">
@@ -32,13 +37,19 @@ label, input [type=submit]{
 		
 		<form:label path="cliente.senha">Senha:</form:label>
 		<form:password path="cliente.senha"/>
+		<form:errors path="cliente.senha"/>
+		
 		
 		<form:label path="confirmacaoSenha">Confirme sua senha:</form:label>
 		<form:password path="confirmacaoSenha" />
+		<form:errors path="confirmacaoSenha"/>
+		
 		
 		<form:label path="cliente.receberOfertaPorEmail">Deseja Receber Ofertas por e-mail fera?</form:label>
 		
 		<form:checkbox path="cliente.receberOfertaPorEmail" value="cliente.receberOfertaPorEmail"/>
+		<form:errors path="cliente.receberOfertaPorEmail"/>
+		
 		
 		<input type="submit" value="salvar"/>
 	</form:form>	

@@ -2,14 +2,33 @@ package br.silveiraalexand.bsi.model;
 
 import java.util.Date;
 
+import javax.validation.constraints.*;
+
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.format.annotation.DateTimeFormat.ISO;
+
 public class Cliente {
 	
 	private Long id;
+	
+	@Size(min=7, message="Nome deve conter pelo menos 7 caracteres")
 	private String nome;
+	
+	@NotNull(message="CPF não pode estar em branco")
+	@Digits(integer=11, fraction=0, message="Informe o CPF, somente numeros.")
 	private Long cpf;
+	
+	@NotNull(message="Data de nascimento deve ser preenchida")
+	@DateTimeFormat(iso=ISO.DATE)
 	private Date dataNascimento;
+	
+	@Pattern(regexp="(M|F)", message = "Sexo inválido")
 	private String sexo;
+	
+	@Size(min=6, max=15)
 	private String senha;
+	
+	@NotNull
 	private Boolean receberOfertaPorEmail;
 	
 	public Long getId() {

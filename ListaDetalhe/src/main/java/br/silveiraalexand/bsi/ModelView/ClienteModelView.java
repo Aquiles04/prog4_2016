@@ -1,9 +1,12 @@
 package br.silveiraalexand.bsi.ModelView;
 
+import javax.validation.Valid;
+
 import br.silveiraalexand.bsi.model.Cliente;
 
 public class ClienteModelView {
 
+	@Valid
 	private Cliente cliente;
 	private String confirmacaoSenha;
 	
