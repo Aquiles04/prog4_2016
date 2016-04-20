@@ -1,10 +1,13 @@
-package br.silveiraalexand.bsi.model;
+package br.silveiraalexand.bsi.repository;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Repository;
+
+import br.silveiraalexand.bsi.model.Categoria;
+import br.silveiraalexand.bsi.model.Produto;
 
 @Repository
 public class NaMemoriaProdutoRepository implements ProdutoRepository {

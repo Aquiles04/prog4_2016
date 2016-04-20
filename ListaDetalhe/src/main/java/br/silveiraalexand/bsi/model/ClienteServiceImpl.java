@@ -3,6 +3,8 @@ package br.silveiraalexand.bsi.model;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import br.silveiraalexand.bsi.repository.ClienteRepository;
+
 @Service
 public class ClienteServiceImpl implements ClienteService {
 

@@ -1,4 +1,6 @@
-package br.silveiraalexand.bsi.model;
+package br.silveiraalexand.bsi.ModelView;
+
+import br.silveiraalexand.bsi.model.Cliente;
 
 public class ClienteModelView {
 

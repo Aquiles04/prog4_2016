@@ -1,6 +1,8 @@
-package br.silveiraalexand.bsi.model;
+package br.silveiraalexand.bsi.repository;
 
 import java.util.List;
+
+import br.silveiraalexand.bsi.model.Produto;
 
 public interface ProdutoRepository {
 

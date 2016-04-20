@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import br.silveiraalexand.bsi.repository.ProdutoRepository;
+
 @Service
 public class ProdutoManagerImpl implements ProdutoManager {
 
