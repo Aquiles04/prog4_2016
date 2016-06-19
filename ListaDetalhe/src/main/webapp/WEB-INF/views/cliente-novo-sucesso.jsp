@@ -10,6 +10,6 @@
 
 	<h1> Sucesso!!! </h1>
 	
-	<a href="http://localhost:8080/base/cliente/novo"> Cadastrar novo? </a>
+	<a href="http://localhost:8080/listadetalhe/cliente/novo"> Cadastrar novo? </a>
 </body>
 </html>

@@ -19,7 +19,7 @@ public class Cliente {
 	private Long cpf;
 	
 	@NotNull(message="Data de nascimento deve ser preenchida")
-	@DateTimeFormat(iso=ISO.DATE)
+	@DateTimeFormat(pattern = "dd.MM.yyyy")
 	private Date dataNascimento;
 	
 	@Pattern(regexp="(M|F)", message = "Sexo inválido")

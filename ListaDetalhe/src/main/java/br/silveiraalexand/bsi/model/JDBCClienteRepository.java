@@ -25,8 +25,8 @@ public class JDBCClienteRepository implements ClienteRepository {
 	con = conexaoBd.obterConexao();
 	
 	String sql = "INSERT INTO clientes " +
-	             "(Nome, CPF, DataNascimento," +
-			     "Sexo, Senha, Ofertas)" +
+	             "(nome, cpf, dataNascimento," +
+			     "sexo, senha, ofertas)" +
 				 "VALUES (?,?,?,?,PASSWORD(?),?)";
 	
 	PreparedStatement ps;

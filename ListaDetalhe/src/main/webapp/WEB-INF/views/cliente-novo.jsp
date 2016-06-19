@@ -24,7 +24,7 @@ label, input [type=submit]{
 		<form:errors path="cliente.cpf"/>
 		
 		
-		<form:label path="cliente.dataNascimento">Data de Nasc.:</form:label>
+		<form:label path="cliente.dataNascimento">Data de Nasc: (dd-MM-yyyy)</form:label>
 		<form:input path="cliente.dataNascimento" type="date"/>
 		<form:errors path="cliente.dataNascimento"/>
 		
